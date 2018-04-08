@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target">
+            <connections>
+                <outlet property="gameStateLbl" destination="8cE-FV-lRZ" id="v9X-9Y-hnz"/>
+                <outlet property="resetButton" destination="dop-fj-lIW" id="GF8-Bq-3N3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="gameTiles" destination="K5N-Gm-jHS" collectionClass="NSMutableArray" id="QJU-uH-dV9"/>
+                <outletCollection property="gameTiles" destination="5F5-WS-2CU" collectionClass="NSMutableArray" id="ev0-4k-ncX"/>
+                <outletCollection property="gameTiles" destination="Kyy-7P-Mar" collectionClass="NSMutableArray" id="gtL-OW-Erh"/>
+                <outletCollection property="gameTiles" destination="Th8-ts-kRh" collectionClass="NSMutableArray" id="3uF-QK-H9m"/>
+                <outletCollection property="gameTiles" destination="Nfd-4M-WLk" collectionClass="NSMutableArray" id="hOx-40-jYc"/>
+                <outletCollection property="gameTiles" destination="LBM-Hh-iZa" collectionClass="NSMutableArray" id="5EW-8B-5zr"/>
+                <outletCollection property="gameTiles" destination="BkA-xU-EJw" collectionClass="NSMutableArray" id="4Mc-S7-rCy"/>
+                <outletCollection property="gameTiles" destination="duK-ES-3y3" collectionClass="NSMutableArray" id="6gS-DS-uD4"/>
+                <outletCollection property="gameTiles" destination="4UL-IP-YpJ" collectionClass="NSMutableArray" id="c7v-2i-FGf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" alpha="0.90000000000000002" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UL-IP-YpJ">
+                    <rect key="frame" x="84" y="242" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="8V6-kf-Trf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBM-Hh-iZa">
+                    <rect key="frame" x="163" y="242" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="uqP-vY-uRL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5F5-WS-2CU">
+                    <rect key="frame" x="244" y="242" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="muU-qW-hJL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duK-ES-3y3">
+                    <rect key="frame" x="84" y="320" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="28n-Yo-x2A"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfd-4M-WLk">
+                    <rect key="frame" x="163" y="320" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="Jdc-IK-RLM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5N-Gm-jHS">
+                    <rect key="frame" x="244" y="320" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="71A-CG-7T9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-xU-EJw">
+                    <rect key="frame" x="84" y="403" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="7PF-6V-pcC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-ts-kRh">
+                    <rect key="frame" x="163" y="403" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="zyh-Ls-P8B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.90000000000000002" tag="33" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-7P-Mar">
+                    <rect key="frame" x="244" y="403" width="54" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.058823529411764705" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.30571863511029407" green="1" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="titleButtonTap:" destination="-1" eventType="touchUpInside" id="E5c-5X-hSK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dop-fj-lIW">
+                    <rect key="frame" x="255" y="579" width="104" height="68"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="RESET"/>
+                    <connections>
+                        <action selector="resetButtonPressed:" destination="-1" eventType="touchUpInside" id="8Zc-tX-wBg"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GameStatus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cE-FV-lRZ">
+                    <rect key="frame" x="70" y="143" width="240" height="71"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.32969029729295479" green="0.91434010152284262" blue="0.67777310831442406" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="127.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

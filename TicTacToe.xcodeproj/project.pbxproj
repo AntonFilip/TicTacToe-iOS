@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		AD22BBD42073C14E006FD89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBD32073C14E006FD89B /* AppDelegate.swift */; };
-		AD22BBD62073C14E006FD89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBD52073C14E006FD89B /* ViewController.swift */; };
-		AD22BBD92073C14E006FD89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD22BBD72073C14E006FD89B /* Main.storyboard */; };
 		AD22BBDB2073C14F006FD89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD22BBDA2073C14F006FD89B /* Assets.xcassets */; };
-		AD22BBDE2073C14F006FD89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD22BBDC2073C14F006FD89B /* LaunchScreen.storyboard */; };
+		AD22BBE72073C2CB006FD89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBE52073C2CB006FD89B /* ViewController.swift */; };
+		AD22BBE82073C2CB006FD89B /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD22BBE62073C2CB006FD89B /* ViewController.xib */; };
+		AD22BBEE2073CA6F006FD89B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBED2073CA6F006FD89B /* Player.swift */; };
+		AD22BBF02073CACB006FD89B /* TileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBEF2073CACB006FD89B /* TileState.swift */; };
+		AD22BBF22073CAF9006FD89B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBF12073CAF9006FD89B /* Result.swift */; };
+		AD22BBF42073CB35006FD89B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD22BBF32073CB35006FD89B /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD22BBD02073C14E006FD89B /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD22BBD32073C14E006FD89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD22BBD52073C14E006FD89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD22BBD82073C14E006FD89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD22BBDA2073C14F006FD89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AD22BBDD2073C14F006FD89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD22BBDF2073C14F006FD89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD22BBE52073C2CB006FD89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD22BBE62073C2CB006FD89B /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		AD22BBED2073CA6F006FD89B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AD22BBEF2073CACB006FD89B /* TileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileState.swift; sourceTree = "<group>"; };
+		AD22BBF12073CAF9006FD89B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		AD22BBF32073CB35006FD89B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				AD22BBD32073C14E006FD89B /* AppDelegate.swift */,
-				AD22BBD52073C14E006FD89B /* ViewController.swift */,
-				AD22BBD72073C14E006FD89B /* Main.storyboard */,
+				AD22BBE62073C2CB006FD89B /* ViewController.xib */,
 				AD22BBDA2073C14F006FD89B /* Assets.xcassets */,
-				AD22BBDC2073C14F006FD89B /* LaunchScreen.storyboard */,
 				AD22BBDF2073C14F006FD89B /* Info.plist */,
+				AD22BBE52073C2CB006FD89B /* ViewController.swift */,
+				AD22BBF32073CB35006FD89B /* Game.swift */,
+				AD22BBEF2073CACB006FD89B /* TileState.swift */,
+				AD22BBF12073CAF9006FD89B /* Result.swift */,
+				AD22BBED2073CA6F006FD89B /* Player.swift */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -122,9 +131,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD22BBDE2073C14F006FD89B /* LaunchScreen.storyboard in Resources */,
+				AD22BBE82073C2CB006FD89B /* ViewController.xib in Resources */,
 				AD22BBDB2073C14F006FD89B /* Assets.xcassets in Resources */,
-				AD22BBD92073C14E006FD89B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +143,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD22BBD62073C14E006FD89B /* ViewController.swift in Sources */,
+				AD22BBE72073C2CB006FD89B /* ViewController.swift in Sources */,
+				AD22BBF42073CB35006FD89B /* Game.swift in Sources */,
+				AD22BBF22073CAF9006FD89B /* Result.swift in Sources */,
+				AD22BBF02073CACB006FD89B /* TileState.swift in Sources */,
+				AD22BBEE2073CA6F006FD89B /* Player.swift in Sources */,
 				AD22BBD42073C14E006FD89B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AD22BBD72073C14E006FD89B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD22BBD82073C14E006FD89B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AD22BBDC2073C14F006FD89B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD22BBDD2073C14F006FD89B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AD22BBE02073C14F006FD89B /* Debug */ = {
